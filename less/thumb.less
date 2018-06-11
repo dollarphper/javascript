@@ -1,0 +1,22 @@
+/*
+ 缩略图类
+ @param num 边距尺寸、圆角半径 如：5
+ @param url 链接 如：url('test.png')
+ */
+.thumb(@num,@url){
+	.background_light(grey,30);
+	background-image: @url;
+	background-repeat: no-repeat;
+	background-position:center;
+	background-size: cover;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	-webkit-background-origin:content-box;
+	background-origin:content-box;
+	.border(@num,grey);
+	.padding(@num);
+	&:hover{
+		.border(@num,green);
+	}
+}

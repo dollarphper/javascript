@@ -1,0 +1,54 @@
+/*
+ 文本输入类
+ @param num 百分比宽度 如：80
+ */
+.form_text(@num){
+	.width(@num);
+	.padding(8);
+	.border(5,grey);
+	.color_light(grey,10);
+	&:focus{
+		.border(5,lighten(grey,20%));
+		.shadow(3,grey);
+	}
+	&[disabled]{
+		.cursor(false);
+		.background_light(grey,40);
+	}
+}
+/*
+ 单选框类
+ @param width 宽度
+ @param height 高度
+ */
+.form_radio(@width,@height){
+	margin: 0;
+	.size(@width,@height);
+}
+/*
+ 复选框类
+ @param width 宽度
+ @param height 高度
+ */
+.form_checkbox(@width,@height){
+	margin: 0;
+	.size(@width,@height);
+}
+/*
+ 文件上传类
+ */
+.form_file(@width,@height){
+	.color_light(grey,20);
+	.font_size(@height/2);
+	.display(b);
+	.size(@width,@height);
+	.border(10,grey,dashed);
+	.text_dir(c);
+	.text_height(@height);
+	& > input[type='file']{
+		.hide(true);
+	}
+	& > span{
+		.font_web(002);
+	}
+}

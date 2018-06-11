@@ -1,0 +1,47 @@
+/*
+ 旋转类
+ @param @num 旋转角度 如：30
+ */
+.transform_rotate(@num){
+	transform: rotate(unit(@num,deg));
+	-ms-transform: rotate(unit(@num,deg));
+	-webkit-transform: rotate(unit(@num,deg));
+	-o-transform: rotate(unit(@num,deg));
+	-moz-transform: rotate(unit(@num,deg));
+}
+/*
+ 偏移类
+ @param @right 向右距离 如：50px
+ @param @bottom 向下距离 如：50px
+ */
+.transform_translate(@right,@bottom){
+	transform: translate(@right,@bottom);
+	-ms-transform: translate(@right,@bottom);
+	-webkit-transform: translate(@right,@bottom);
+	-o-transform: translate(@right,@bottom);
+	-moz-transform: translate(@right,@bottom);
+}
+/*
+ 缩放类
+ @param @right 向右倍数 如：2
+ @param @bottom 向下倍数 如：2
+ */
+.transform_scale(@right,@bottom){
+	transform: scale(@right,@bottom);
+	-ms-transform: scale(@right,@bottom);
+	-webkit-transform: scale(@right,@bottom);
+	-o-transform: scale(@right,@bottom);
+	-moz-transform: scale(@right,@bottom);
+}
+/*
+ 翻转类
+ @param @right 向右角度 如：30
+ @param @bottom 向下角度 如：30
+ */
+.transform_skew(@right,@bottom){
+	transform: skew(unit(-@right,deg),unit(@bottom,deg));
+	-ms-transform: skew(unit(-@right,deg),unit(@bottom,deg));
+	-webkit-transform: skew(unit(-@right,deg),unit(@bottom,deg));
+	-o-transform: skew(unit(-@right,deg),unit(@bottom,deg));
+	-moz-transform: skew(unit(-@right,deg),unit(@bottom,deg));
+}

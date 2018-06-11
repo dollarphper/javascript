@@ -1,0 +1,31 @@
+/*
+ 导航菜单类
+ @param type 方向 true 顶部 false 左边
+ */
+.menu(@type:true){
+	& when(@type=true){
+		.list(true);
+		& > li{
+			.position(r);
+			.link(false);
+			.padding(5,10);
+			&:hover{
+				border-bottom: 2px solid lighten(blue,30%);
+			}
+		}
+	}
+	& when(@type=false){
+		.width(10);
+		.list(false);
+		& > li{
+			.position(r);
+			.link(false);
+			.padding(10,5);
+			&:hover{
+				border-right: 2px solid lighten(blue,30%);
+			}
+		}
+	}
+	.text_break();
+	.padding(5);
+}

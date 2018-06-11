@@ -46,3 +46,4 @@ function queryjson(data){
 // var queryjson = new queryjson(json)
 // var ret = queryjson.jsontoquery()
 // console.log(ret)
+module.exports = queryjson

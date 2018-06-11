@@ -146,3 +146,4 @@ function base64(data){
 // var base64 = new base64(data)
 // var ret = base64.encode()
 // console.log(ret)
+module.exports = base64

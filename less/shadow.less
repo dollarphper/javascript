@@ -1,0 +1,14 @@
+/*
+ 阴影类
+ @param num 阴影大小 如：5
+ @param color 阴影颜色
+ @param style 阴影样式 0 outset 1 inset
+ */
+.shadow(@num,@background,@style:0){
+	& when(@style=0){
+		box-shadow: 0 0 unit(@num,px) unit(@num,px) lighten(@background,30%);
+	}
+	& when(@style=1){
+		box-shadow: 0 0 unit(@num,px) unit(@num,px) lighten(@background,30%) inset;
+	}
+}

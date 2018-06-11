@@ -82,3 +82,4 @@ function istype(data){
 // var istype = new istype([1,2])
 // var ret = istype.isbool()
 // console.log(ret)
+module.exports = istype

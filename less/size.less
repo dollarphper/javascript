@@ -1,0 +1,15 @@
+/*
+ 尺寸类
+ @param width 宽度 如：50px
+ @param height 高度 如：50px
+ */
+.size(@width,@height:false){
+	& when not(@height=false){
+		width: @width;
+		height: @height;
+	}
+	& when(@height=false){
+		width: @width;
+		height: @width;
+	}
+}

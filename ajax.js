@@ -258,3 +258,4 @@ function ajax(obj){
 // }).error(function(){
 // 	console.log(2)
 // }).send()
+module.exports = ajax

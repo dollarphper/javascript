@@ -1,0 +1,15 @@
+/*
+ 浮动类
+ @param 浮动类型 l向左浮动 r向右浮动 c清除浮动
+ */
+.float(@type:l){
+	& when(@type=l){
+		float: left;
+	}
+	& when(@type=r){
+		float: right;
+	}
+	& when(@type=c){
+		clear: both;
+	}
+}

@@ -7,3 +7,4 @@ function getscrollheight(){
 }
 // var ret = getscrollheight()
 // console.log(ret)
+module.exports = getscrollheight

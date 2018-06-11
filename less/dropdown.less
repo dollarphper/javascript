@@ -1,0 +1,30 @@
+/*
+ 下拉菜单类
+ @param color 鼠标悬停颜色 如：green
+ @param left 居左位置 如：50
+ @param top 居顶位置 如：50
+ */
+.dropdown(@color:green,@left:0,@top:0){
+	.position(r);
+	& > ul{
+		.list(false);
+		.padding(10);
+		.transition();
+		.border(5);
+		.shadow(3,grey);
+		.margin(0);
+		.position(a);
+		z-index: 999;
+		left:unit(@left,px);
+		top:unit(@top,px);
+		& > li{
+			.cursor(true);
+			&:hover{
+				.background_light(@color,30);
+			}
+		}
+	}
+	& > span{
+		.link();
+	}
+}

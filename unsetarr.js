@@ -12,3 +12,4 @@ function unsetarr(arr,item,len = 1){
 // var arr = new Array(1,2,3,4)
 // var ret = unsetarr(arr,1,2)
 // console.log(ret)
+module.exports = unsetarr

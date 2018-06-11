@@ -1,0 +1,29 @@
+/*
+ 描述类
+ @param dir 方向 false垂直 true水平
+ */
+.desc(@dir:true){
+	& > dt{
+		.font_bold();
+		.padding(5,0);
+	}
+	& when(@dir=false){
+		& > dd{
+			margin:0;
+			.text_break();
+		}
+	}
+	& when(@dir=true){
+		& > dt{
+			.width(10);
+			.float(l);
+			.text_dir(r);
+			.text_hide();
+		}
+		& > dd{
+			margin-left: 12%;
+			.text_break();
+			.padding(5,0);
+		}
+	}
+}

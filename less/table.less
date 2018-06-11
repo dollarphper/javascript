@@ -1,0 +1,26 @@
+/*
+ 表格类
+ @param num 百分比宽度 如：80
+ @param dir 文本方向 l左 c中 r右
+ */
+.table(@num,@dir:l){
+	.text_dir(@dir);
+	.width(@num);
+	border-collapse: collapse;
+	@border: 1px solid darken(grey, 10%);
+	@common:{
+		.padding(10,5);
+		border-top: @border;
+		border-bottom: @border;
+	};
+	& > tr:hover{
+		.background_light(grey,45);
+	}
+	& > th{
+		.font_bold();
+		@common();
+	}
+	& > td{
+		@common();
+	}
+}

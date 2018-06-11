@@ -1,0 +1,11 @@
+/*
+ 栅格类（总宽度为11）
+ @param row 宽度 如：5
+ @param offset 偏移量 如：1
+ */
+.grid(@row;@offset:0){
+	.float(l);
+	.display(b);
+	width: unit(@row/11*100,%);
+	margin-left: unit(@offset/11*100,%);
+}

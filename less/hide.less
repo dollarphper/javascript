@@ -1,0 +1,12 @@
+/*
+ 隐藏/显示类
+ @param bool 是否隐藏 true 隐藏 false 显示
+ */
+.hide(@bool:true){
+	& when(@bool=true){
+		visibility: hidden;
+	}
+	& when(@bool=false){
+		visibility: visible;
+	}
+}

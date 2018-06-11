@@ -15,3 +15,4 @@ function arrmax(arr){
 // var arr = [1,2,5,3,2,4]
 // var ret = arrmax(arr)
 // console.log(ret)
+module.exports = arrmax

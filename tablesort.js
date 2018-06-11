@@ -41,10 +41,11 @@ var data = new Array(
          content:'content2'
      }
  )
-var tablesort = new tablesort(data)
-var ret = tablesort.sort('id')
-console.log(ret)
-var ret = tablesort.sort('title')
-console.log(ret)
-var ret = tablesort.sort('id')
-console.log(ret)
+// var tablesort = new tablesort(data)
+// var ret = tablesort.sort('id')
+// console.log(ret)
+// var ret = tablesort.sort('title')
+// console.log(ret)
+// var ret = tablesort.sort('id')
+// console.log(ret)
+module.exports = tablesort

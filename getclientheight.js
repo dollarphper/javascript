@@ -12,3 +12,4 @@ function getclientheight(){
 }
 // var ret = getclientheight()
 // console.log(ret)
+module.exports = getclientheight

@@ -233,3 +233,4 @@ function validation(main){
 // validation.init()
 // var ret = validation.checkdata()
 // console.log(ret);
+module.exports = validation

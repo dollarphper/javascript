@@ -38,3 +38,4 @@ function parseurl(url){
 }
 // var ret = parseurl('https://user:pass@www.baidu.com:443/a/b/c.jpg?a=b&c=d#id');
 // console.log(ret)
+module.exports = parseurl

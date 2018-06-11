@@ -13,3 +13,4 @@ function getscrolltop(){
 }
 // var ret = getscrolltop()
 // console.log(ret)
+module.exports = getscrolltop

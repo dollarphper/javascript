@@ -1,0 +1,31 @@
+/*
+ 相册类
+ @param num 尺寸 如：200px
+ @param url 背景图片地址 如：url('./test.png')
+ */
+.album(@num,@url){
+	.size(@num,@num*1.1);
+	.margin(@num/15);
+	.shadow(3,grey);
+	.text_dir(c);
+	@innum:@num*0.8;
+	& > div{
+		.background_image(@url);
+		.size(@innum);
+		.position(r);
+		top: 10%;
+		.center();
+		.border(@num/30);
+		&:hover{
+			.border(@num/30,green);
+		}
+	}
+	& > h4{
+		.position(r);
+		top: 10%;
+		.margin(@num/25,0);
+		.color_light(grey,10);
+		.text_hide();
+		.padding(0,10%);
+	}
+}

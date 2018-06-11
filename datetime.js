@@ -209,3 +209,4 @@ function datetime(){
 // console.log(ret4)
 // console.log(ret5)
 // console.log(ret6)
+module.exports = datetime

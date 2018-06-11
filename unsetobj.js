@@ -14,3 +14,4 @@ function unsetobj(obj,item){
 // }
 // var ret = unsetobj(obj,'sex')
 // console.log(ret)
+module.exports = unsetobj

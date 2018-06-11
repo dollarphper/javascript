@@ -1,0 +1,13 @@
+/*
+ 外边距类
+ @param v 垂直距离 如：10
+ @param h 水平距离 如：10
+ */
+.margin(@v,@h:false){
+	& when(@h=false){
+		margin:unit(@v,px);
+	}
+	& when not(@h=false){
+		margin:unit(@v,px) unit(@h,px);
+	}
+}

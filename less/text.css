@@ -1,0 +1,27 @@
+/*
+ 文本方向
+ @param dir 文本方向：l左 c中 r右
+ */
+/*
+ 超出部分隐藏
+ */
+/*
+ 单词间距类
+ @param @num 大小 如：15
+ */
+/*
+ 改变大小写
+ @param val 大小写变量：u大写 l小写 c首字母大写
+ */
+/*
+ 行高
+ @param num 尺寸 如：20px
+ */
+/*
+ 是否打断文本
+ @param bool 是否打断 false不打断 true打断
+ */
+/*
+ 文本修饰类
+ @param type 类型 n无 t向上 m中间 b向下
+ */

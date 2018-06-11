@@ -1,0 +1,307 @@
+/*
+ 相册类
+ @param num 尺寸 如：200px
+ @param url 背景图片地址 如：url('./test.png')
+ */
+/*
+ 加载类动画
+ */
+/*
+ 进度条类动画
+ */
+/*
+ 背景色—浅色类（同时设置背景色与前景色）
+ @param color 起始颜色 如：red
+ @param num 百分比 如：10
+ @param alpha 不透明度 0透明 100不透明
+ @param tocolor 终止颜色 如：blue
+ @param type 渐变类型 true线性渐变 false径向渐变
+ @param dir 线性渐变的方向 默认：to right
+ */
+/*
+ 背景色—深色类（同时设置背景色与前景色）
+ @param color 起始颜色 如：red
+ @param num 百分比 如：10
+ @param alpha 不透明度 0透明 100不透明
+ @param tocolor 终止颜色 如：blue
+ @param type 渐变类型 true线性渐变 false径向渐变
+ @param dir 线性渐变的方向 默认：to right
+ */
+/*
+ 背景图片类
+ */
+/*
+ 徽章类
+ @param num 边距大小 如：5
+ @param background 背景颜色 如：red
+ */
+/*
+ body类
+ */
+/*
+ 边框类
+ @param num 圆角大小 如：5
+ @param color 颜色
+ @param style 边框样式 默认：solid 可用值：inset outset ridge dashed dotted
+ */
+/*
+ 按钮类
+ @param num 内边距、边框半径尺寸 如：5
+ @param background 背景色 如：red
+ */
+/*
+ 居中类
+ */
+/*
+ 代码类
+ @param num 边距大小 如：5
+ @param background 背景颜色 如：red
+ */
+/*
+ 前景色—浅色类
+ @param color 起始颜色 如：red
+ @param num 百分比 如：10
+ @param alpha 不透明度 0透明 100不透明
+ @param tocolor 终止颜色 如：blue
+ @param type 渐变类型 true线性渐变 false径向渐变
+ @param dir 线性渐变的方向 默认：to right
+ */
+/*
+ 前景色—深色类
+ @param color 起始颜色 如：red
+ @param num 百分比 如：10
+ @param alpha 不透明度 0透明 100不透明
+ @param tocolor 终止颜色 如：blue
+ @param type 渐变类型 true线性渐变 false径向渐变
+ @param dir 线性渐变的方向 默认：to right
+ */
+/*
+ 悬停图标类
+ @param style 悬停类型 true手形 false禁止状态
+ */
+/*
+ 描述类
+ @param dir 方向 false垂直 true水平
+ */
+/*
+ 显示类
+ @param style 显示样式 n隐藏 b块 i行 ib行级块
+ */
+/*
+ 下拉菜单类
+ @param color 鼠标悬停颜色 如：green
+ @param left 居左位置 如：50
+ @param top 居顶位置 如：50
+ */
+/*
+ 浮动类
+ @param 浮动类型 l向左浮动 r向右浮动 c清除浮动
+ */
+/*
+ 文本加粗类
+ @style 类型 false加粗 true更粗
+ */
+/*
+ 字体大小类
+ @num 大小 如：15
+ */
+/*
+ 网络字体类
+ @param num 编号 如：001
+ @param path 字体路径 如：font/01
+ */
+/*
+ 文本输入类
+ @param num 百分比宽度 如：80
+ */
+/*
+ 单选框类
+ @param width 宽度
+ @param height 高度
+ */
+/*
+ 复选框类
+ @param width 宽度
+ @param height 高度
+ */
+/*
+ 文件上传类
+ */
+/*
+ 全局显示效果
+ */
+body {
+  margin: 0;
+  font-size: 14px;
+}
+a:link {
+  color: #1a1aff;
+  text-decoration: none;
+}
+a:hover {
+  color: #3333ff;
+  text-decoration: underline;
+  cursor: pointer;
+}
+a:active {
+  color: #6666ff;
+  text-decoration: none;
+}
+a:visited {
+  color: #9999ff;
+  text-decoration: none;
+}
+hr {
+  margin: 2px 0;
+  border: 0;
+  border-top: 1px solid #cdcdcd;
+}
+/*
+ 栅格类（总宽度为11）
+ @param row 宽度 如：5
+ @param offset 偏移量 如：1
+ */
+/*
+ 高度类
+ */
+/*
+ 隐藏/显示类
+ @param bool 是否隐藏 true 隐藏 false 显示
+ */
+/*
+ 分隔线类
+ */
+/*
+ 标签类
+ @num 边距大小 如：5
+ @param background 背景颜色 如：red
+ */
+/*
+ 超链接类
+ @param type 是否显示超链接 true显示 false不显示
+ @param color 颜色 如：green
+ */
+/*
+ 列表样式
+ @param dir 方向 false垂直 true水平
+ */
+/*
+ 外边距类
+ @param v 垂直距离 如：10
+ @param h 水平距离 如：10
+ */
+/*
+ 屏幕自适应类
+ @param @mix 参数 如：@mix:{.width(10);};
+ @param @min 最小宽度 如：320
+ @param @max 最大宽度 如：720
+ */
+/*
+ 导航菜单类
+ @param type 方向 true 顶部 false 左边
+ */
+/*
+ 透明度类
+ @param num 不透明比率 0-100 0透明 100不透明
+ */
+/*
+ 内边距类
+ @param v 垂直边距大小 如：5
+ @param h 水平边距大小 如：5
+ */
+/*
+ 点位符类
+ @param color 颜色 如：red
+ */
+/*
+ 位置类
+ @param @type 类型 r相对 a绝对 f固定
+ */
+/*
+ 对打印机不可见
+ */
+/*
+ 自动插入换行符
+ */
+/*
+ 进度条类
+ */
+/*
+ 阴影类
+ @param num 阴影大小 如：5
+ @param color 阴影颜色
+ @param style 阴影样式 0 outset 1 inset
+ */
+/*
+ 尺寸类
+ @param width 宽度 如：50px
+ @param height 高度 如：50px
+ */
+/*
+ 表格类
+ @param num 百分比宽度 如：80
+ @param dir 文本方向 l左 c中 r右
+ */
+/*
+ 文本方向
+ @param dir 文本方向：l左 c中 r右
+ */
+/*
+ 超出部分隐藏
+ */
+/*
+ 改变大小写
+ @param val 大小写变量：u大写 l小写 c首字母大写
+ */
+/*
+ 行高
+ @param num 尺寸 如：20px
+ */
+/*
+ 是否打断文本
+ @param bool 是否打断 false不打断 true打断
+ */
+/*
+ 文本修饰类
+ @param type 类型 n无 t向上 m中间 b向下
+ */
+/*
+ 缩略图类
+ @param num 边距尺寸、圆角半径 如：5
+ @param url 链接 如：url('test.png')
+ */
+/*
+ 旋转类
+ @param @num 旋转角度 如：30
+ */
+/*
+ 偏移类
+ @param @right 向右距离 如：50px
+ @param @bottom 向下距离 如：50px
+ */
+/*
+ 缩放类
+ @param @right 向右倍数 如：2
+ @param @bottom 向下倍数 如：2
+ */
+/*
+ 翻转类
+ @param @right 向右角度 如：30
+ @param @bottom 向下角度 如：30
+ */
+/*
+ 过渡类
+ */
+/*
+ 加载类
+ @param num 大小 如：50px
+ @param url 链接 如：url('test.png')
+ */
+/*
+ 警告框类
+ @param background 背景颜色 如：red
+ */
+/*
+ 宽度类
+ @param num 百分比 如：50
+ */

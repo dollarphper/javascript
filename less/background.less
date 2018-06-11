@@ -1,0 +1,72 @@
+/*
+ 背景色—浅色类（同时设置背景色与前景色）
+ @param color 起始颜色 如：red
+ @param num 百分比 如：10
+ @param alpha 不透明度 0透明 100不透明
+ @param tocolor 终止颜色 如：blue
+ @param type 渐变类型 true线性渐变 false径向渐变
+ @param dir 线性渐变的方向 默认：to right
+ */
+.background_light(@color,@num:0,@alpha:100,@tocolor:0,@type:true,@dir:to right){
+	@red:red(@color);
+	@green:green(@color);
+	@blue:blue(@color);
+	@incolor:rgba(@red,@green,@blue,@alpha/100);
+	@mycolor:lighten(@incolor,unit(@num,%));
+	@myfccolor:contrast(@mycolor);
+	color:@myfccolor;
+	& when (@tocolor=0){
+		background:@mycolor;
+	}
+	& when not(@tocolor=0){
+		@tored:red(@tocolor);
+		@togreen:green(@tocolor);
+		@toblue:blue(@tocolor);
+		@intocolor:rgba(@tored,@togreen,@toblue,@alpha/100);
+		@mytocolor:lighten(@intocolor,unit(@num,%));
+		& when(@type=true){
+			background:linear-gradient(@dir,@mycolor,@mytocolor);
+			background: svg-gradient(@dir,@mycolor,@mytocolor);
+		}
+		& when(@type=false){
+			background:radial-gradient(@mycolor,@mytocolor);
+			background: svg-gradient(ellipse,@mycolor,@mytocolor);
+		}
+	}
+}
+/*
+ 背景色—深色类（同时设置背景色与前景色）
+ @param color 起始颜色 如：red
+ @param num 百分比 如：10
+ @param alpha 不透明度 0透明 100不透明
+ @param tocolor 终止颜色 如：blue
+ @param type 渐变类型 true线性渐变 false径向渐变
+ @param dir 线性渐变的方向 默认：to right
+ */
+.background_dark(@color,@num:0,@alpha:100,@tocolor:0,@type:true,@dir:to right){
+	@red:red(@color);
+	@green:green(@color);
+	@blue:blue(@color);
+	@incolor:rgba(@red,@green,@blue,@alpha/100);
+	@mycolor:darken(@incolor,unit(@num,%));
+	@myfccolor:contrast(@mycolor);
+	color:@myfccolor;
+	& when (@tocolor=0){
+		background:@mycolor;
+	}
+	& when not(@tocolor=0){
+		@tored:red(@tocolor);
+		@togreen:green(@tocolor);
+		@toblue:blue(@tocolor);
+		@intocolor:rgba(@tored,@togreen,@toblue,@alpha/100);
+		@mytocolor:darken(@intocolor,unit(@num,%));
+		& when(@type=true){
+			background:linear-gradient(@dir,@mycolor,@mytocolor);
+			background: svg-gradient(@dir,@mycolor,@mytocolor);
+		}
+		& when(@type=false){
+			background:radial-gradient(@mycolor,@mytocolor);
+			background: svg-gradient(ellipse,@mycolor,@mytocolor);
+		}
+	}
+}

@@ -1,0 +1,25 @@
+body {
+  margin: 0;
+  font-size: 14px;
+}
+a:link {
+  color: #1a1aff;
+  text-decoration: none;
+}
+a:hover {
+  color: #3333ff;
+  text-decoration: underline;
+}
+a:active {
+  color: #6666ff;
+  text-decoration: none;
+}
+a:visited {
+  color: #9999ff;
+  text-decoration: none;
+}
+hr {
+  margin: 2px 0;
+  border: 0;
+  border-top: 1px solid #cdcdcd;
+}

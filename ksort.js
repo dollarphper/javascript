@@ -17,3 +17,4 @@ function ksort(obj){
 // }
 // var ret = ksort(obj)
 // console.log(ret)
+module.exports = ksort

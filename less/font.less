@@ -1,0 +1,833 @@
+/*
+ 文本加粗类
+ @style 类型 false加粗 true更粗
+ */
+.font_bold(@style:false){
+  & when(@style=false){
+    font-weight: bold;
+  }
+  & when(@style=true){
+    font-weight: bolder;
+  }
+}
+/*
+ 字体大小类
+ @num 大小 如：15
+ */
+.font_size(@num){
+  font-size: unit(@num,px);
+}
+/*
+ 字间距类
+ @num 大小 如：15
+ */
+.font_gap(@num){
+  letter-spacing: unit(@num,px);
+}
+/*
+ 网络字体类
+ @param num 编号 如：001
+ @param path 字体路径 如：font/01
+ */
+.font_web(@num,@path) {
+  @font-face {
+    font-family: 'font_web';
+    src: url('@{path}.eot');
+    src: url('@{path}.eot?#iefix') format('embedded-opentype'),
+         url('@{path}.woff2') format('woff2'),
+         url('@{path}.woff') format('woff'),
+         url('@{path}.ttf') format('truetype'),
+  }
+  position: relative;
+  top: 1px;
+  display: inline-block;
+  font-family: 'font_web';
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  & when(@num=001){
+    &:before { content: "\002a"; } 
+  }
+  & when(@num=002){
+    &:before { content: "\002b"; } 
+  }
+  & when(@num=003){
+    &:before { content: "\20ac"; } 
+  }
+  & when(@num=004){
+    &:before { content: "\2212"; } 
+  }
+  & when(@num=005){
+    &:before { content: "\2601"; } 
+  }
+  & when(@num=006){
+    &:before { content: "\2709"; } 
+  }
+  & when(@num=007){
+    &:before { content: "\270f"; } 
+  }
+  & when(@num=008){
+    &:before { content: "\e001"; } 
+  }
+  & when(@num=009){
+    &:before { content: "\e002"; } 
+  }
+  & when(@num=010){
+    &:before { content: "\e003"; } 
+  }
+  & when(@num=011){
+    &:before { content: "\e005"; } 
+  }
+  & when(@num=012){
+    &:before { content: "\e006"; } 
+  }
+  & when(@num=013){
+    &:before { content: "\e007"; } 
+  }
+  & when(@num=014){
+    &:before { content: "\e008"; } 
+  }
+  & when(@num=015){
+    &:before { content: "\e009"; } 
+  }
+  & when(@num=016){
+    &:before { content: "\e010"; } 
+  }
+  & when(@num=017){
+    &:before { content: "\e011"; } 
+  }
+  & when(@num=018){
+    &:before { content: "\e012"; } 
+  }
+  & when(@num=019){
+    &:before { content: "\e013"; } 
+  }
+  & when(@num=020){
+    &:before { content: "\e014"; } 
+  }
+  & when(@num=021){
+    &:before { content: "\e015"; } 
+  }
+  & when(@num=022){
+    &:before { content: "\e016"; } 
+  }
+  & when(@num=023){
+    &:before { content: "\e017"; } 
+  }
+  & when(@num=024){
+    &:before { content: "\e018"; } 
+  }
+  & when(@num=025){
+    &:before { content: "\e019"; } 
+  }
+  & when(@num=026){
+    &:before { content: "\e020"; } 
+  }
+  & when(@num=027){
+    &:before { content: "\e021"; } 
+  }
+  & when(@num=028){
+    &:before { content: "\e022"; } 
+  }
+  & when(@num=029){
+    &:before { content: "\e023"; } 
+  }
+  & when(@num=030){
+    &:before { content: "\e024"; } 
+  }
+  & when(@num=031){
+    &:before { content: "\e025"; } 
+  }
+  & when(@num=032){
+    &:before { content: "\e026"; } 
+  }
+  & when(@num=033){
+    &:before { content: "\e027"; } 
+  }
+  & when(@num=034){
+    &:before { content: "\e028"; } 
+  }
+  & when(@num=035){
+    &:before { content: "\e029"; } 
+  }
+  & when(@num=036){
+    &:before { content: "\e030"; } 
+  }
+  & when(@num=037){
+    &:before { content: "\e031"; } 
+  }
+  & when(@num=038){
+    &:before { content: "\e032"; } 
+  }
+  & when(@num=039){
+    &:before { content: "\e033"; } 
+  }
+  & when(@num=040){
+    &:before { content: "\e034"; } 
+  }
+  & when(@num=041){
+    &:before { content: "\e035"; } 
+  }
+  & when(@num=042){
+    &:before { content: "\e036"; } 
+  }
+  & when(@num=043){
+    &:before { content: "\e037"; } 
+  }
+  & when(@num=044){
+    &:before { content: "\e038"; } 
+  }
+  & when(@num=045){
+    &:before { content: "\e039"; } 
+  }
+  & when(@num=046){
+    &:before { content: "\e040"; } 
+  }
+  & when(@num=047){
+    &:before { content: "\e041"; } 
+  }
+  & when(@num=048){
+    &:before { content: "\e042"; } 
+  }
+  & when(@num=049){
+    &:before { content: "\e043"; } 
+  }
+  & when(@num=050){
+    &:before { content: "\e044"; } 
+  }
+  & when(@num=051){
+    &:before { content: "\e045"; } 
+  }
+  & when(@num=052){
+    &:before { content: "\e046"; } 
+  }
+  & when(@num=053){
+    &:before { content: "\e047"; } 
+  }
+  & when(@num=054){
+    &:before { content: "\e048"; } 
+  }
+  & when(@num=055){
+    &:before { content: "\e049"; } 
+  }
+  & when(@num=056){
+    &:before { content: "\e050"; } 
+  }
+  & when(@num=057){
+    &:before { content: "\e051"; } 
+  }
+  & when(@num=058){
+    &:before { content: "\e052"; } 
+  }
+  & when(@num=059){
+    &:before { content: "\e053"; } 
+  }
+  & when(@num=060){
+    &:before { content: "\e054"; } 
+  }
+  & when(@num=061){
+    &:before { content: "\e055"; } 
+  }
+  & when(@num=062){
+    &:before { content: "\e056"; } 
+  }
+  & when(@num=063){
+    &:before { content: "\e057"; } 
+  }
+  & when(@num=064){
+    &:before { content: "\e058"; } 
+  }
+  & when(@num=065){
+    &:before { content: "\e059"; } 
+  }
+  & when(@num=066){
+    &:before { content: "\e060"; } 
+  }
+  & when(@num=067){
+    &:before { content: "\e062"; } 
+  }
+  & when(@num=068){
+    &:before { content: "\e063"; } 
+  }
+  & when(@num=069){
+    &:before { content: "\e064"; } 
+  }
+  & when(@num=070){
+    &:before { content: "\e065"; } 
+  }
+  & when(@num=071){
+    &:before { content: "\e066"; } 
+  }
+  & when(@num=072){
+    &:before { content: "\e067"; } 
+  }
+  & when(@num=073){
+    &:before { content: "\e068"; } 
+  }
+  & when(@num=074){
+    &:before { content: "\e069"; } 
+  }
+  & when(@num=075){
+    &:before { content: "\e070"; } 
+  }
+  & when(@num=076){
+    &:before { content: "\e071"; } 
+  }
+  & when(@num=077){
+    &:before { content: "\e072"; } 
+  }
+  & when(@num=078){
+    &:before { content: "\e073"; } 
+  }
+  & when(@num=079){
+    &:before { content: "\e074"; } 
+  }
+  & when(@num=080){
+    &:before { content: "\e075"; } 
+  }
+  & when(@num=081){
+    &:before { content: "\e076"; } 
+  }
+  & when(@num=082){
+    &:before { content: "\e077"; } 
+  }
+  & when(@num=083){
+    &:before { content: "\e078"; } 
+  }
+  & when(@num=084){
+    &:before { content: "\e079"; } 
+  }
+  & when(@num=085){
+    &:before { content: "\e080"; } 
+  }
+  & when(@num=086){
+    &:before { content: "\e081"; } 
+  }
+  & when(@num=087){
+    &:before { content: "\e082"; } 
+  }
+  & when(@num=088){
+    &:before { content: "\e083"; } 
+  }
+  & when(@num=089){
+    &:before { content: "\e084"; } 
+  }
+  & when(@num=090){
+    &:before { content: "\e085"; } 
+  }
+  & when(@num=091){
+    &:before { content: "\e086"; } 
+  }
+  & when(@num=092){
+    &:before { content: "\e087"; } 
+  }
+  & when(@num=093){
+    &:before { content: "\e088"; } 
+  }
+  & when(@num=094){
+    &:before { content: "\e089"; } 
+  }
+  & when(@num=095){
+    &:before { content: "\e090"; } 
+  }
+  & when(@num=096){
+    &:before { content: "\e091"; } 
+  }
+  & when(@num=097){
+    &:before { content: "\e092"; } 
+  }
+  & when(@num=098){
+    &:before { content: "\e093"; } 
+  }
+  & when(@num=099){
+    &:before { content: "\e094"; } 
+  }
+  & when(@num=100){
+    &:before { content: "\e095"; } 
+  }
+  & when(@num=101){
+    &:before { content: "\e096"; } 
+  }
+  & when(@num=102){
+    &:before { content: "\e097"; } 
+  }
+  & when(@num=103){
+    &:before { content: "\e101"; } 
+  }
+  & when(@num=104){
+    &:before { content: "\e102"; } 
+  }
+  & when(@num=105){
+    &:before { content: "\e103"; } 
+  }
+  & when(@num=106){
+    &:before { content: "\e104"; } 
+  }
+  & when(@num=107){
+    &:before { content: "\e105"; } 
+  }
+  & when(@num=108){
+    &:before { content: "\e106"; } 
+  }
+  & when(@num=109){
+    &:before { content: "\e107"; } 
+  }
+  & when(@num=110){
+    &:before { content: "\e108"; } 
+  }
+  & when(@num=111){
+    &:before { content: "\e109"; } 
+  }
+  & when(@num=112){
+    &:before { content: "\e110"; } 
+  }
+  & when(@num=113){
+    &:before { content: "\e111"; } 
+  }
+  & when(@num=114){
+    &:before { content: "\e112"; } 
+  }
+  & when(@num=115){
+    &:before { content: "\e113"; } 
+  }
+  & when(@num=116){
+    &:before { content: "\e114"; } 
+  }
+  & when(@num=117){
+    &:before { content: "\e115"; } 
+  }
+  & when(@num=118){
+    &:before { content: "\e117"; } 
+  }
+  & when(@num=119){
+    &:before { content: "\e118"; } 
+  }
+  & when(@num=120){
+    &:before { content: "\e119"; } 
+  }
+  & when(@num=121){
+    &:before { content: "\e120"; } 
+  }
+  & when(@num=122){
+    &:before { content: "\e121"; } 
+  }
+  & when(@num=123){
+    &:before { content: "\e122"; } 
+  }
+  & when(@num=124){
+    &:before { content: "\e123"; } 
+  }
+  & when(@num=125){
+    &:before { content: "\e124"; } 
+  }
+  & when(@num=126){
+    &:before { content: "\e125"; } 
+  }
+  & when(@num=127){
+    &:before { content: "\e126"; } 
+  }
+  & when(@num=128){
+    &:before { content: "\e127"; } 
+  }
+  & when(@num=129){
+    &:before { content: "\e128"; } 
+  }
+  & when(@num=130){
+    &:before { content: "\e129"; } 
+  }
+  & when(@num=131){
+    &:before { content: "\e130"; } 
+  }
+  & when(@num=132){
+    &:before { content: "\e131"; } 
+  }
+  & when(@num=133){
+    &:before { content: "\e132"; } 
+  }
+  & when(@num=134){
+    &:before { content: "\e133"; } 
+  }
+  & when(@num=135){
+    &:before { content: "\e134"; } 
+  }
+  & when(@num=136){
+    &:before { content: "\e135"; } 
+  }
+  & when(@num=137){
+    &:before { content: "\e136"; } 
+  }
+  & when(@num=138){
+    &:before { content: "\e137"; } 
+  }
+  & when(@num=139){
+    &:before { content: "\e138"; } 
+  }
+  & when(@num=140){
+    &:before { content: "\e139"; } 
+  }
+  & when(@num=141){
+    &:before { content: "\e140"; } 
+  }
+  & when(@num=142){
+    &:before { content: "\e141"; } 
+  }
+  & when(@num=143){
+    &:before { content: "\e142"; } 
+  }
+  & when(@num=144){
+    &:before { content: "\e143"; } 
+  }
+  & when(@num=145){
+    &:before { content: "\e144"; } 
+  }
+  & when(@num=146){
+    &:before { content: "\e145"; } 
+  }
+  & when(@num=147){
+    &:before { content: "\e146"; } 
+  }
+  & when(@num=148){
+    &:before { content: "\e148"; } 
+  }
+  & when(@num=149){
+    &:before { content: "\e149"; } 
+  }
+  & when(@num=150){
+    &:before { content: "\e150"; } 
+  }
+  & when(@num=151){
+    &:before { content: "\e151"; } 
+  }
+  & when(@num=152){
+    &:before { content: "\e152"; } 
+  }
+  & when(@num=153){
+    &:before { content: "\e153"; } 
+  }
+  & when(@num=154){
+    &:before { content: "\e154"; } 
+  }
+  & when(@num=155){
+    &:before { content: "\e155"; } 
+  }
+  & when(@num=156){
+    &:before { content: "\e156"; } 
+  }
+  & when(@num=157){
+    &:before { content: "\e157"; } 
+  }
+  & when(@num=158){
+    &:before { content: "\e158"; } 
+  }
+  & when(@num=159){
+    &:before { content: "\e159"; } 
+  }
+  & when(@num=160){
+    &:before { content: "\e160"; } 
+  }
+  & when(@num=161){
+    &:before { content: "\e161"; } 
+  }
+  & when(@num=162){
+    &:before { content: "\e162"; } 
+  }
+  & when(@num=163){
+    &:before { content: "\e163"; } 
+  }
+  & when(@num=164){
+    &:before { content: "\e164"; } 
+  }
+  & when(@num=165){
+    &:before { content: "\e165"; } 
+  }
+  & when(@num=166){
+    &:before { content: "\e166"; } 
+  }
+  & when(@num=167){
+    &:before { content: "\e167"; } 
+  }
+  & when(@num=168){
+    &:before { content: "\e168"; } 
+  }
+  & when(@num=169){
+    &:before { content: "\e169"; } 
+  }
+  & when(@num=170){
+    &:before { content: "\e170"; } 
+  }
+  & when(@num=171){
+    &:before { content: "\e171"; } 
+  }
+  & when(@num=172){
+    &:before { content: "\e172"; } 
+  }
+  & when(@num=173){
+    &:before { content: "\e173"; } 
+  }
+  & when(@num=174){
+    &:before { content: "\e174"; } 
+  }
+  & when(@num=175){
+    &:before { content: "\e175"; } 
+  }
+  & when(@num=176){
+    &:before { content: "\e176"; } 
+  }
+  & when(@num=177){
+    &:before { content: "\e177"; } 
+  }
+  & when(@num=178){
+    &:before { content: "\e178"; } 
+  }
+  & when(@num=179){
+    &:before { content: "\e179"; } 
+  }
+  & when(@num=180){
+    &:before { content: "\e180"; } 
+  }
+  & when(@num=181){
+    &:before { content: "\e181"; } 
+  }
+  & when(@num=182){
+    &:before { content: "\e182"; } 
+  }
+  & when(@num=183){
+    &:before { content: "\e183"; } 
+  }
+  & when(@num=184){
+    &:before { content: "\e184"; } 
+  }
+  & when(@num=185){
+    &:before { content: "\e185"; } 
+  }
+  & when(@num=186){
+    &:before { content: "\e186"; } 
+  }
+  & when(@num=187){
+    &:before { content: "\e187"; } 
+  }
+  & when(@num=188){
+    &:before { content: "\e188"; } 
+  }
+  & when(@num=189){
+    &:before { content: "\e189"; } 
+  }
+  & when(@num=190){
+    &:before { content: "\e190"; } 
+  }
+  & when(@num=191){
+    &:before { content: "\e191"; } 
+  }
+  & when(@num=192){
+    &:before { content: "\e192"; } 
+  }
+  & when(@num=193){
+    &:before { content: "\e193"; } 
+  }
+  & when(@num=194){
+    &:before { content: "\e194"; } 
+  }
+  & when(@num=195){
+    &:before { content: "\e195"; } 
+  }
+  & when(@num=196){
+    &:before { content: "\e197"; } 
+  }
+  & when(@num=197){
+    &:before { content: "\e198"; } 
+  }
+  & when(@num=198){
+    &:before { content: "\e199"; } 
+  }
+  & when(@num=199){
+    &:before { content: "\e200"; } 
+  }
+  & when(@num=200){
+    &:before { content: "\e201"; } 
+  }
+  & when(@num=201){
+    &:before { content: "\e202"; } 
+  }
+  & when(@num=202){
+    &:before { content: "\e203"; } 
+  }
+  & when(@num=203){
+    &:before { content: "\e204"; } 
+  }
+  & when(@num=204){
+    &:before { content: "\e205"; } 
+  }
+  & when(@num=205){
+    &:before { content: "\e206"; } 
+  }
+  & when(@num=206){
+    &:before { content: "\e209"; } 
+  }
+  & when(@num=207){
+    &:before { content: "\e210"; } 
+  }
+  & when(@num=208){
+    &:before { content: "\e211"; } 
+  }
+  & when(@num=209){
+    &:before { content: "\e212"; } 
+  }
+  & when(@num=210){
+    &:before { content: "\e213"; } 
+  }
+  & when(@num=211){
+    &:before { content: "\e214"; } 
+  }
+  & when(@num=212){
+    &:before { content: "\e215"; } 
+  }
+  & when(@num=213){
+    &:before { content: "\e216"; } 
+  }
+  & when(@num=214){
+    &:before { content: "\26fa"; } 
+  }
+  & when(@num=215){
+    &:before { content: "\e218"; } 
+  }
+  & when(@num=216){
+    &:before { content: "\e219"; } 
+  }
+  & when(@num=217){
+    &:before { content: "\f8ff"; } 
+  }
+  & when(@num=218){
+    &:before { content: "\e221"; } 
+  }
+  & when(@num=219){
+    &:before { content: "\231b"; } 
+  }
+  & when(@num=220){
+    &:before { content: "\e223"; } 
+  }
+  & when(@num=221){
+    &:before { content: "\e224"; } 
+  }
+  & when(@num=222){
+    &:before { content: "\e225"; } 
+  }
+  & when(@num=223){
+    &:before { content: "\e226"; } 
+  }
+  & when(@num=224){
+    &:before { content: "\e227"; } 
+  }
+  & when(@num=225){
+    &:before { content: "\e227"; } 
+  }
+  & when(@num=226){
+    &:before { content: "\e227"; } 
+  }
+  & when(@num=227){
+    &:before { content: "\00a5"; } 
+  }
+  & when(@num=228){
+    &:before { content: "\00a5"; } 
+  }
+  & when(@num=229){
+    &:before { content: "\20bd"; } 
+  }
+  & when(@num=230){
+    &:before { content: "\20bd"; } 
+  }
+  & when(@num=231){
+    &:before { content: "\e230"; } 
+  }
+  & when(@num=232){
+    &:before { content: "\e231"; } 
+  }
+  & when(@num=233){
+    &:before { content: "\e232"; } 
+  }
+  & when(@num=234){
+    &:before { content: "\e233"; } 
+  }
+  & when(@num=235){
+    &:before { content: "\e234"; } 
+  }
+  & when(@num=236){
+    &:before { content: "\e235"; } 
+  }
+  & when(@num=237){
+    &:before { content: "\e236"; } 
+  }
+  & when(@num=238){
+    &:before { content: "\e237"; } 
+  }
+  & when(@num=239){
+    &:before { content: "\e238"; } 
+  }
+  & when(@num=240){
+    &:before { content: "\e239"; } 
+  }
+  & when(@num=241){
+    &:before { content: "\e240"; } 
+  }
+  & when(@num=242){
+    &:before { content: "\e241"; } 
+  }
+  & when(@num=243){
+    &:before { content: "\e242"; } 
+  }
+  & when(@num=244){
+    &:before { content: "\e243"; } 
+  }
+  & when(@num=245){
+    &:before { content: "\e244"; } 
+  }
+  & when(@num=246){
+    &:before { content: "\e245"; } 
+  }
+  & when(@num=247){
+    &:before { content: "\e246"; } 
+  }
+  & when(@num=248){
+    &:before { content: "\e247"; } 
+  }
+  & when(@num=249){
+    &:before { content: "\e248"; } 
+  }
+  & when(@num=250){
+    &:before { content: "\e249"; } 
+  }
+  & when(@num=251){
+    &:before { content: "\e250"; } 
+  }
+  & when(@num=252){
+    &:before { content: "\e251"; } 
+  }
+  & when(@num=253){
+    &:before { content: "\e252"; } 
+  }
+  & when(@num=254){
+    &:before { content: "\e253"; } 
+  }
+  & when(@num=255){
+    &:before { content: "\e254"; } 
+  }
+  & when(@num=256){
+    &:before { content: "\e255"; } 
+  }
+  & when(@num=257){
+    &:before { content: "\e256"; } 
+  }
+  & when(@num=258){
+    &:before { content: "\e257"; } 
+  }
+  & when(@num=259){
+    &:before { content: "\e258"; } 
+  }
+  & when(@num=260){
+    &:before { content: "\e259"; } 
+  }
+  & when(@num=261){
+    &:before { content: "\e260"; } 
+  }
+}

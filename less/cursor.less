@@ -1,0 +1,12 @@
+/*
+ 悬停图标类
+ @param style 悬停类型 true手形 false禁止状态
+ */
+.cursor(@style:true){
+	& when(@style=true){
+		cursor:pointer;
+	}
+	& when(@style=false){
+		cursor:not-allowed;
+	}
+}

@@ -1,0 +1,70 @@
+/*
+ 前景色—浅色类
+ @param color 起始颜色 如：red
+ @param num 百分比 如：10
+ @param alpha 不透明度 0透明 100不透明
+ @param tocolor 终止颜色 如：blue
+ @param type 渐变类型 true线性渐变 false径向渐变
+ @param dir 线性渐变的方向 默认：to right
+ */
+.color_light(@color,@num:0,@alpha:100,@tocolor:0,@type:true,@dir:to right){
+	@red:red(@color);
+	@green:green(@color);
+	@blue:blue(@color);
+	@incolor:rgba(@red,@green,@blue,@alpha/100);
+	@mycolor:lighten(@incolor,unit(@num,%));
+	& when (@tocolor=0){
+		color:@mycolor;
+	}
+	& when not(@tocolor=0){
+		@tored:red(@tocolor);
+		@togreen:green(@tocolor);
+		@toblue:blue(@tocolor);
+		@intocolor:rgba(@tored,@togreen,@toblue,@alpha/100);
+		@mytocolor:lighten(@intocolor,unit(@num,%));
+		display: inline-block;
+		& when(@type=true){
+		    background: linear-gradient(@dir,@mycolor,@mytocolor);
+		}
+		& when(@type=false){
+		    background: radial-gradient(@mycolor,@mytocolor);
+		}
+	    -webkit-background-clip: text;
+	    color: transparent;
+	}
+}
+/*
+ 前景色—深色类
+ @param color 起始颜色 如：red
+ @param num 百分比 如：10
+ @param alpha 不透明度 0透明 100不透明
+ @param tocolor 终止颜色 如：blue
+ @param type 渐变类型 true线性渐变 false径向渐变
+ @param dir 线性渐变的方向 默认：to right
+ */
+.color_dark(@color,@num:0,@alpha:100,@tocolor:0,@type:true,@dir:to right){
+	@red:red(@color);
+	@green:green(@color);
+	@blue:blue(@color);
+	@incolor:rgba(@red,@green,@blue,@alpha/100);
+	@mycolor:darken(@incolor,unit(@num,%));
+	& when (@tocolor=0){
+		color:@mycolor;
+	}
+	& when not(@tocolor=0){
+		@tored:red(@tocolor);
+		@togreen:green(@tocolor);
+		@toblue:blue(@tocolor);
+		@intocolor:rgba(@tored,@togreen,@toblue,@alpha/100);
+		@mytocolor:darken(@intocolor,unit(@num,%));
+		display: inline-block;
+		& when(@type=true){
+		    background: linear-gradient(@dir,@mycolor,@mytocolor);
+		}
+		& when(@type=false){
+		    background: radial-gradient(@mycolor,@mytocolor);
+		}
+	    -webkit-background-clip: text;
+	    color: transparent;
+	}
+}

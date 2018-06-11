@@ -1,0 +1,18 @@
+/*
+ 点位符类
+ @param color 颜色 如：red
+ */
+.placeholder(@color){
+	&::-webkit-input-placeholder {
+	    color:lighten(@color,30%);
+	}
+	&:-moz-placeholder {
+	    color:lighten(@color,30%);
+	}
+	&::-moz-placeholder {
+	    color:lighten(@color,30%);
+	}
+	&:-ms-input-placeholder {
+	    color:lighten(@color,30%);
+	}
+}

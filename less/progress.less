@@ -1,0 +1,16 @@
+/*
+ 进度条类
+ */
+.progress(@background){
+	.border(5,lighten(grey,40%),inset);
+	.shadow(5,grey,inset);
+	.center();
+	.height(4);
+	.background_light(grey,40);
+	& > div{
+		.border(5,lighten(@background,20%));
+		.size(90%,100%);
+		.background_light(@background,20);
+		.animation_progress();
+	}
+}

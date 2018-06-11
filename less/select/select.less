@@ -1,0 +1,26 @@
+@path:'../';
+@import "@{path}index";
+.select_text{
+	.form_text(80);
+}
+.select_span{
+	.position(r);
+	left: -2%;
+	.cursor(true);
+	.font_web(260,"../font/01");
+}
+.select_ul{
+	.display(n);
+	.list(v);
+	.width(78);
+	.padding(25);
+	.margin(0);
+	.height(25);
+	.border(5,grey);
+	overflow: auto;
+	li{
+		&:hover{
+			.background_light(green,10);
+		}
+	}
+}

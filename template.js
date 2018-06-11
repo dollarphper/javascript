@@ -21,3 +21,4 @@ function template(data,content){
 // var content = "Hello {name}, Welcome to {place}!";
 // var ret = template(data,content)
 // console.log(ret)
+module.exports = template

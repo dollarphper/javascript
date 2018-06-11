@@ -1,0 +1,18 @@
+/*
+ 显示类
+ @param style 显示样式 n隐藏 b块 i行 ib行级块
+ */
+.display(@style:n){
+	& when(@style=n){
+		display: none;
+	}
+	& when(@style=b){
+		display: block;
+	}
+	& when(@style=i){
+		display: inline;
+	}
+	& when(@style=ib){
+		display: inline-block;
+	}
+}

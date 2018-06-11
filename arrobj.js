@@ -64,3 +64,4 @@ function arrobj(data){
 // var arrobj = new arrobj(data)
 // var ret = arrobj.arrtoobj()
 // console.log(ret)
+module.exports = arrobj

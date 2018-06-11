@@ -15,3 +15,4 @@ function arrmin(arr){
 // var arr = [5,1,2,3,2,4]
 // var ret = arrmin(arr)
 // console.log(ret)
+module.exports = arrmin

@@ -23,3 +23,4 @@ function keysearch(key,str){
 // var key = '玩'
 // var ret = keysearch(key,str)
 // console.log(ret)
+module.exports = keysearch

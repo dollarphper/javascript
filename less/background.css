@@ -1,0 +1,18 @@
+/*
+ 背景色—浅色类（同时设置背景色与前景色）
+ @param color 起始颜色 如：red
+ @param num 百分比 如：10
+ @param alpha 不透明度 0透明 100不透明
+ @param tocolor 终止颜色 如：blue
+ @param type 渐变类型 true线性渐变 false径向渐变
+ @param dir 线性渐变的方向 默认：to right
+ */
+/*
+ 背景色—深色类（同时设置背景色与前景色）
+ @param color 起始颜色 如：red
+ @param num 百分比 如：10
+ @param alpha 不透明度 0透明 100不透明
+ @param tocolor 终止颜色 如：blue
+ @param type 渐变类型 true线性渐变 false径向渐变
+ @param dir 线性渐变的方向 默认：to right
+ */

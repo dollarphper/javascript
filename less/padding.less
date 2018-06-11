@@ -1,0 +1,13 @@
+/*
+ 内边距类
+ @param v 垂直边距大小 如：5
+ @param h 水平边距大小 如：5
+ */
+.padding(@v,@h:false){
+	& when(@h=false){
+		padding:unit(@v,px);
+	}
+	& when not(@h=false){
+		padding:unit(@v,px) unit(@h,px);
+	}
+}

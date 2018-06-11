@@ -1,0 +1,18 @@
+/*
+ 屏幕自适应类
+ @param @mix 参数 如：@mix:{.width(10);};
+ @param @min 最小宽度 如：320
+ @param @max 最大宽度 如：720
+ */
+.media(@mix,@min:0,@max:false){
+	& when(@max=false){
+		@media (min-width: unit(@min,px)){
+			@mix();
+		}
+	}
+	& when not (@max=false){
+		@media (min-width: unit(@min,px)) and (max-width: unit(@max,px)){
+			@mix();
+		}
+	}
+}

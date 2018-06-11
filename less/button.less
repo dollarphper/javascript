@@ -1,0 +1,18 @@
+/*
+ 按钮类
+ @param num 内边距、边框半径尺寸 如：5
+ @param background 背景色 如：red
+ */
+.button(@num,@background){
+	.background_light(@background,10);
+	.padding(@num);
+	.border(@num,lighten(grey,10%));
+	&:hover{
+		.border(@num,lighten(green,40%));
+		.shadow(3,grey);
+	}
+	&[disabled]{
+		.cursor(n);
+		background: lighten(grey,40%);
+	}
+}

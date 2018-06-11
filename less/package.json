@@ -1,0 +1,47 @@
+{
+  "_from": "dollarphp-less",
+  "_inBundle": false,
+  "_integrity": "sha512-qXTGuomXhF8XQM/hV9tXQ3nJxs+HBG8+J01KrI6L3iQauQRayAs7lQquaWpwXRw7e1uxkphHoVfDkZMsbpc5zA==",
+  "_location": "/dollarphp-less",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "dollarphp-less",
+    "name": "dollarphp-less",
+    "escapedName": "dollarphp-less",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/dollarphp-less/-/dollarphp-less-0.0.1.tgz",
+  "_shasum": "8620597ef2674bc48f39faa08078dbb589a02cef",
+  "_spec": "dollarphp-less",
+  "_where": "C:\\Users\\Lee\\Desktop\\01\\dollarphp",
+  "author": "Lee",
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "less",
+  "keywords": [
+    "less"
+  ],
+  "license": "ISC",
+  "main": "index.less",
+  "name": "dollarphp-less",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "0.0.6",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dollarphper/less.git"
+  },
+  "bugs": {
+    "url": "https://github.com/dollarphper/less/issues"
+  },
+  "homepage": "https://github.com/dollarphper/less#readme"
+}

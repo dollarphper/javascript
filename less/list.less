@@ -1,0 +1,18 @@
+/*
+ 列表样式
+ @param dir 方向 false垂直 true水平
+ */
+.list(@dir:true){
+	.margin(0);
+	list-style: none;
+	.padding(0);
+	& when(@dir=false){
+		padding-left: 0;
+	}
+	& when(@dir=true){
+		& > li{
+			.display(ib);
+			padding-left: 1%;
+		}
+	}
+}

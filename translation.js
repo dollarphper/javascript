@@ -75,3 +75,4 @@ function translation(data){
 // var translation = new translation(data)
 // var ret = translation.translate(arr)
 // console.log(ret);
+module.exports = translation

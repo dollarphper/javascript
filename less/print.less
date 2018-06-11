@@ -1,0 +1,14 @@
+/*
+ 对打印机不可见
+ */
+.print_hide(){
+	@media print{
+		display: none;
+	}
+}
+/*
+ 自动插入换行符
+ */
+.print_page(){
+	page-break-after:always;
+}

@@ -1,0 +1,78 @@
+/*
+ 加载类动画
+ */
+.animation_wait(){
+	@keyframes wait{
+		from{
+			transform: rotate(0deg);
+		}
+		to{
+			transform: rotate(360deg);
+		}
+	}
+	@-moz-keyframes wait{
+		from{
+			transform: rotate(0deg);
+		}
+		to{
+			transform: rotate(360deg);
+		}
+	}
+	@-webkit-keyframes wait{
+		from{
+			transform: rotate(0deg);
+		}
+		to{
+			transform: rotate(360deg);
+		}
+	}
+	@-o-keyframes wait{
+		from{
+			transform: rotate(0deg);
+		}
+		to{
+			transform: rotate(360deg);
+		}
+	}
+	animation:wait 1s ease-in-out infinite;
+	-webkit-animation:wait 1s ease-in-out infinite;
+}
+/*
+ 进度条类动画
+ */
+.animation_progress(){
+	@keyframes progress{
+		from{
+			.width(0);
+		}
+		to{
+			.width(90);
+		}
+	}
+	@-moz-keyframes progress{
+		from{
+			.width(0);
+		}
+		to{
+			.width(90);
+		}
+	}
+	@-webkit-keyframes progress{
+		from{
+			.width(0);
+		}
+		to{
+			.width(90);
+		}
+	}
+	@-o-keyframes progress{
+		from{
+			.width(0);
+		}
+		to{
+			.width(90);
+		}
+	}
+	animation:progress 3s ease-in-out 1;
+	-webkit-animation:progress 3s ease-in-out 1;
+}

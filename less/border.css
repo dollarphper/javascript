@@ -1,0 +1,6 @@
+/*
+ 边框类
+ @param num 圆角大小 如：5
+ @param color 颜色
+ @param style 边框样式 默认：solid 可用值：inset outset ridge dashed dotted
+ */

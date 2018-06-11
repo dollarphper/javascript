@@ -1,0 +1,6 @@
+/*
+ 屏幕自适应类
+ @param @mix 参数 如：@mix:{.width(10);};
+ @param @min 最小宽度 如：320
+ @param @max 最大宽度 如：720
+ */
