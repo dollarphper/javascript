@@ -1,0 +1,22 @@
+{
+  "name": "dollarphp",
+  "version": "0.0.2",
+  "description": "common packager",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dollarphper/npm.git"
+  },
+  "keywords": [
+    "javascript"
+  ],
+  "author": "dollarphp",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dollarphper/npm/issues"
+  },
+  "homepage": "https://github.com/dollarphper/npm#readme"
+}
