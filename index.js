@@ -18,6 +18,7 @@ var translation = require('./translation')
 var unsetarr = require('./unsetarr')
 var unsetobj = require('./unsetobj')
 var validation = require('./validation')
+var gettree = require('./gettree')
 var dollarphp = {
 	ajax:ajax,
 	arrmax:arrmax,
@@ -38,6 +39,7 @@ var dollarphp = {
 	translation:translation,
 	unsetarr:unsetarr,
 	unsetobj:unsetobj,
-	validation:validation
+	validation:validation,
+	gettree:gettree
 }
 module.exports = dollarphp
