@@ -55,7 +55,7 @@
  @param bool 是否打断 false不打断 true打断
  */
 .text_break(@bool:true){
-	& when(@type=false){
+	& when(@bool=false){
 		word-break: keep-all;
 	}
 	& when(@bool=true){
