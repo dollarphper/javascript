@@ -11,7 +11,9 @@
 	}
 	& when(@dir=true){
 		& > li{
-			.display(ib);
+			display: inline-block;
+		}
+		& > li:not(:nth-child(1)){
 			padding-left: 1%;
 		}
 	}
