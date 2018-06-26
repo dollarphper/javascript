@@ -1,6 +1,6 @@
 {
   "name": "dollarphp",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "common packager",
   "main": "index.js",
   "scripts": {
