@@ -174,15 +174,13 @@ function datetime(){
 		var date = new Date(stamp*1000)
 		var time = Math.round(new Date().getTime()/1000)
 		diff = time - stamp
-		if(diff<0){
-			return '—';
-		}else if(diff<60){
+		if(diff>0 && diff<60){
 			return diff+'秒前'
-		}else if(diff<3600){
+		}else if(diff>0 && diff<3600){
 			return Math.floor(diff/60)+'分钟前'
-		}else if(diff<86400){
+		}else if(diff>0 && diff<86400){
 			return Math.floor(diff/3600)+'小时前'
-		}else if(diff<259200){
+		}else if(diff>0 && diff<259200){
 			return Math.floor(diff/86400)+'天前'
 		}else{
 			var year = this.parsetime(date.getFullYear())
