@@ -46,6 +46,12 @@
  */
 /*
  按钮类
+ @param num 气泡大小 如：5
+ @param background 气泡颜色 如：red
+ @param dir 方向 true左 false右
+ */
+/*
+ 按钮类
  @param num 内边距、边框半径尺寸 如：5
  @param background 背景色 如：red
  */
@@ -103,6 +109,10 @@
  */
 /*
  字体大小类
+ @num 大小 如：15
+ */
+/*
+ 字间距类
  @num 大小 如：15
  */
 /*
@@ -244,10 +254,14 @@ hr {
  */
 /*
  文本方向
- @param dir 文本方向：l左 c中 r右
+ @param dir 文本方向：l左 c中 r右 j两端对齐
  */
 /*
  超出部分隐藏
+ */
+/*
+ 单词间距类
+ @param @num 大小 如：15
  */
 /*
  改变大小写

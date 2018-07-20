@@ -1,0 +1,17 @@
+/*
+ 按钮类
+ @param num 气泡大小 如：5
+ @param background 气泡颜色 如：red
+ @param dir 方向 true左 false右
+ */
+.bubble(@num,@background,@dir:true){
+	.size(0px);
+	border-width: unit(@num,px);
+	border-style: solid;
+	& when (@dir=true){
+		border-color: transparent lighten(@background,30%) transparent transparent;
+	}
+	& when (@dir=false){
+		border-color: transparent transparent transparent lighten(@background,30%);
+	}
+}
