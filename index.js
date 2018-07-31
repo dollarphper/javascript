@@ -7,19 +7,22 @@ var datetime = require('./datetime')
 var getclientheight = require('./getclientheight')
 var getscrollheight = require('./getscrollheight')
 var getscrolltop = require('./getscrolltop')
+var gettree = require('./gettree')
+var hidetel = require('./hidetel')
+var inarray = require('./inarray')
 var istype = require('./istype')
 var keysearch = require('./keysearch')
 var ksort = require('./ksort')
+var onemore = require('./onemore')
 var parseurl = require('./parseurl')
 var queryjson = require('./queryjson')
+var strrepeat = require('./strrepeat')
 var tablesort = require('./tablesort')
 var template = require('./template')
 var translation = require('./translation')
 var unsetarr = require('./unsetarr')
 var unsetobj = require('./unsetobj')
 var validation = require('./validation')
-var gettree = require('./gettree')
-var inarray = require('./inarray')
 var dollarphp = {
 	ajax:ajax,
 	arrmax:arrmax,
@@ -30,18 +33,21 @@ var dollarphp = {
 	getclientheight:getclientheight,
 	getscrollheight:getscrollheight,
 	getscrolltop:getscrolltop,
+	gettree:gettree,
+	hidetel:hidetel,
+	inarray:inarray,
 	istype:istype,
 	keysearch:keysearch,
 	ksort:ksort,
+	onemore:onemore,
 	parseurl:parseurl,
 	queryjson:queryjson,
+	strrepeat:strrepeat,
 	tablesort:tablesort,
 	template:template,
 	translation:translation,
 	unsetarr:unsetarr,
 	unsetobj:unsetobj,
-	validation:validation,
-	gettree:gettree,
-	inarray:inarray
+	validation:validation
 }
 module.exports = dollarphp
