@@ -4,6 +4,7 @@ var arrmin = require('./arrmin')
 var arrobj = require('./arrobj')
 var base64 = require('./base64')
 var datetime = require('./datetime')
+var filter = require('./filter')
 var getclientheight = require('./getclientheight')
 var getscrollheight = require('./getscrollheight')
 var getscrolltop = require('./getscrolltop')
@@ -30,6 +31,7 @@ var dollarphp = {
 	arrobj:arrobj,
 	base64:base64,
 	datetime:datetime,
+	filter:filter,
 	getclientheight:getclientheight,
 	getscrollheight:getscrollheight,
 	getscrolltop:getscrolltop,
