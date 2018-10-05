@@ -1,5 +1,6 @@
 /*
  @desc：aes加密/解密类
+ @author lee <complet@163.com>
  */
 function crypt() {
 	/**
