@@ -193,6 +193,40 @@ function datetime(){
 			return ret
 		}
 	}
+	/*
+	 @desc：时间转换成秒
+	 @param time 时间，如：10:00:00
+	 @return ret 秒数，如：36000
+	 */
+	this.timetosecond = function(time){
+		var arr = time.split(':')
+		var hour = arr[0]?arr[0]:0
+		var minute = arr[1]?arr[1]:0
+		var second = arr[2]?arr[2]:0
+		var ret = parseInt(hour * 3600) + parseInt(minute * 60) + parseInt(second)
+		return ret
+	}
+	/*
+	 @desc：秒转换成时间
+	 @param seconds 秒数，如：36000
+	 @return ret 时间，如：10:00:00
+	 */
+	this.secondtotime = function(seconds){
+		hour = Math.floor(seconds / 3600)
+		minute = Math.floor((seconds - hour * 3600) / 60)
+		second = seconds - hour * 3600 - minute * 60
+		if(hour < 10){
+			hour = "0" + hour
+		}
+		if(minute < 10){
+			minute = "0" + minute
+		}
+		if(second < 10){
+			second = "0" + second
+		}
+		ret = hour + ':' + minute + ':' + second
+		return ret
+	}
 }
 // var datetime = new datetime()
 // var ret1 = datetime.timetostr(1528593779)
@@ -201,10 +235,14 @@ function datetime(){
 // var ret4 = datetime.dateadd('-1year','2018')
 // var ret5 = datetime.timeswitch('2018-06')
 // var ret6 = datetime.timefriend(1528593779)
+// var ret7 = datetime.timetosecond('10:00:00')
+// var ret8 = datetime.secondtotime('36000')
 // console.log(ret1)
 // console.log(ret2)
 // console.log(ret3)
 // console.log(ret4)
 // console.log(ret5)
 // console.log(ret6)
+console.log(ret7)
+console.log(ret8)
 module.exports = datetime
