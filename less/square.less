@@ -1,0 +1,15 @@
+/*
+ 自适应正方形
+ @param size 大小，如：100%
+ */
+.square(@size){
+	&{
+		width: @size;
+		overflow: hidden;
+	}
+	&:after{
+        content: '';
+        display: block;
+        margin-top: 100%;
+	}
+}

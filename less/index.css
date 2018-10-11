@@ -248,6 +248,10 @@ hr {
  @param height 高度 如：50px
  */
 /*
+ 自适应正方形
+ @param size 大小，如：100%
+ */
+/*
  表格类
  @param num 百分比宽度 如：80
  @param dir 文本方向 l左 c中 r右

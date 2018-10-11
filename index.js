@@ -3,6 +3,7 @@ var arrmax = require('./arrmax')
 var arrmin = require('./arrmin')
 var arrobj = require('./arrobj')
 var base64 = require('./base64')
+var crypt = require('./crypt')
 var datetime = require('./datetime')
 var filter = require('./filter')
 var getclientheight = require('./getclientheight')
@@ -30,6 +31,7 @@ var dollarphp = {
 	arrmin:arrmin,
 	arrobj:arrobj,
 	base64:base64,
+	crypt:crypt,
 	datetime:datetime,
 	filter:filter,
 	getclientheight:getclientheight,
