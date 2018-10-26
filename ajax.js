@@ -182,6 +182,7 @@ function ajax(obj){
 	        var info = this.parseurl(url)
 	        var scheme = info.scheme
 	        var host = info.host
+	        var port = info.port
 	        var path = info.path
 	        var query = info.query
 	        if(data instanceof Object){
@@ -199,7 +200,7 @@ function ajax(obj){
 	        }
 	        var psep = (path)?'/':''
 	        var sep = (query || data)?'?':''
-	        url = scheme+'://'+host+psep+path+sep+query+data
+	        url = scheme+'://'+host+':'+port+psep+path+sep+query+data
 	        data = ''
 	        this.xhr.open(type,url,async)
 	    }else if(type == 'json'){
